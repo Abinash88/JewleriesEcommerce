@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: white;
+    --foreground: #f1eae2;
+
+    --card: #dde5d6;
+    --card-foreground: #cbd7ce;
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(20 14.3% 4.1%);
+
+    --primary: #819e89;
+    --primary-foreground: hsl(60 9.1% 97.8%);
+
+    --secondary: hsl(60, 20%, 92%);
+    --secondary-foreground: hsl(24 79% 50%);
+
+    --muted: hsl(40, 100%, 99%);
+    --muted-foreground: hsl(25 5.3% 44.7%);
+
+    --accent: hsl(60 4.8% 95.9%);
+    --accent-foreground: hsl(24 79% 50%);
+
+    --destructive: #332d26;
+    --destructive-foreground: hsl(60 9.1% 97.8%);
+
+    --border: hsl(20 5.9% 90%);
+    --input: hsl(20 5.9% 90%);
+    --ring: hsl(20 14.3% 4.1%);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: hsl(20 14.3% 4.1%);
+    --foreground: hsl(60 9.1% 97.8%);
+
+    --card: hsl(20 14.3% 4.1%);
+    --card-foreground: hsl(60 9.1% 97.8%);
+
+    --popover: hsl(20 14.3% 4.1%);
+    --popover-foreground: hsl(60 9.1% 97.8%);
+
+    --primary: hsl(60 9.1% 97.8%);
+    --primary-foreground: hsl(24 9.8% 10%);
+
+    --secondary: hsl(12 6.5% 15.1%);
+    --secondary-foreground: hsl(60 9.1% 97.8%);
+
+    --muted: hsl(12 6.5% 15.1%);
+    --muted-foreground: hsl(24 5.4% 63.9%);
+
+    --accent: hsl(12 6.5% 15.1%);
+    --accent-foreground: hsl(60 9.1% 97.8%);
+
+    --destructive: hsl(0 62.8% 30.6%);
+    --destructive-foreground: hsl(60 9.1% 97.8%);
+
+    --border: hsl(12 6.5% 15.1%);
+    --input: hsl(12 6.5% 15.1%);
+    --ring: hsl(24 5.7% 82.9%);
+  }
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.max_width {
+  @apply max-w-[1440px] mx-auto w-[90%];
+}
+
+.Epilogue {
+  font-family: "Epilogue", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.section_title {
+  @apply md:text-4xl text-2xl  lg:text-5xl  font-semibold font-['Epilogue'] leading-[40px] lg:leading-[68px];
+}
+
+.section_desc {
+  @apply md:w-[300px] w-full  text-base font-normal font-['Inter'] leading-relaxed;
+}
+
+.links {
+  @apply lg:text-[12px] text-[16px] font-normal;
+  font-family: "Inter", sans-serif;
+}
+
+.green_btn {
+  @apply text-center py-2 md:py-3 px-[22px] bg-teal-800 hover:bg-teal-900 transition-all duration-300 rounded text-white text-[14px] lg:text-[16px]  font-normal  font-['Inter'] leading-7;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.ExploreAutoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+  gap: 10px;
+}
+
+.BlogAutoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+  gap: 35px;
+}
+
+.VideoAutoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  gap: 35px;
+}
+
+.transition3sec {
+  @apply transition-all duration-300;
+}
+
+.transition5sec {
+  @apply transition-all duration-500;
+}
+
+.transition7sec {
+  @apply transition-all duration-700;
+}
+
+/* SELF STYLE TESTIMONIAL NAV BUTTON  */
+.testimonials .slick-arrow.slick-next {
+  @apply absolute top-[390px] z-20 !text-[30px] right-[100px];
+}
+
+.hero_title {
+  @apply xl:text-[56px] lg:text-[40px] text-[35px] font-bold font-['Epilogue'] leading-[140%];
+}
+
+.slick-arrow.slick-next::before {
+  font-size: 40px;
+}
+
+.slick-arrow.slick-prev::before {
+  font-size: 40px;
+}
+
+.testimonials .slick-arrow.slick-prev {
+  @apply absolute top-[390px]  z-20 left-[500px];
+}
+
+.doctorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+  gap: 18px;
+}
+
+@media screen and (max-width: 686px) {
+  .doctorsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 10px;
+  }
+}
+
+/* TOP HEADER SAME STYLE DESIGN */
+.top_header_title {
+  @apply text-[22px] md:text-[30px] lg:text-[40px] font-bold font-['Epilogue'] leading-[130%];
+}
+
+.top_header_paragraph {
+  @apply text-[15px] lg:text-[17px] font-normal  font-['Inter'] leading-[30px];
+}
+/* TOP HEADER SAME STYLE DESIGN */
+
+/* STYLED IF THE NAVBAR IS BEING FIXED  */
+.fixed_head_style {
+  @apply lg:mt-0 mt-[60px] md:mt-[100px];
+}
+
+.submenueGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+@media screen and (max-width: 1024px) {
+  .submenueGrid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.aboutGridBox {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(206px, 1fr));
+}
+
+@media screen and (max-width: 1384px) {
+  .aboutGridBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutGridBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(206px, 1fr));
+  }
+}
+
+.DirectorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+  gap: 60px;
+}
+
+.ContactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
+  gap: 24px;
+}
+
+.MediaGridCenter {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 56px;
+}
+
+@media screen and (max-width: 1024px) {
+  .overflow_style::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 20px;
+  }
+
+  .overflow_style::-webkit-scrollbar-thumb {
+    width: 100%;
+    background-color: rgb(150, 150, 150);
+    border-radius: 20px;
+  }
+}
+
+/* INPUT BOX STYLE HERE  */
+
+.contactInput {
+  @apply h-full relative w-full bg-black bg-opacity-0 px-2 py-3 focus:outline-none rounded border 
+  border-zinc-400 text-zinc-600 text-base font-normal font-['Inter']  flex-1 leading-relaxed;
+}
+
+form .careers_form {
+  @apply flex flex-col items-start w-full my-3 gap-1;
+}
+
+form .careers_form label {
+  @apply text-[16px] font-normal  text-gray-700;
+}
+
+form .careers_form input {
+  @apply text-[16px] focus:outline-none font-normal text-gray-700 py-2 px-3 border rounded-md w-full;
+}
+
+form .careers_form input[type="file"]::-webkit-file-upload-button {
+  background-color: white;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 10px;
+}
+
+.priceList tbody tr:nth-child(odd) {
+  background-color: #8080801e;
+}
+
+.iframe_container iframe {
+  width: 100% !important;
+}
+
+.navBtnHide {
+  display: none;
+}
+
+.social_iframe > html {
+  background-color: red !important;
+  width: 450px;
+  min-width: 450px !important;
+}
+
+#blogsDetail .iframe_container p {
+  @apply py-2;
+}
