@@ -17,8 +17,8 @@
     --primary: hsl(137, 13%, 56%);
     --primary-foreground: hsl(60 9.1% 97.8%);
 
-    --secondary: hsl(60, 20%, 92%);
-    --secondary-foreground: hsl(24 79% 50%);
+    --secondary: #efefe7;
+    --secondary-foreground: #f1eae2;
 
     --muted: hsl(40, 100%, 99%);
     --muted-foreground: hsl(25 5.3% 44.7%);
@@ -29,12 +29,13 @@
     --destructive: #332d26;
     --destructive-foreground: hsl(60 9.1% 97.8%);
 
-    --border: hsl(20 5.9% 90%);
+    --border: hsl(120, 6%, 90%);
     --input: hsl(20 5.9% 90%);
     --ring: hsl(20 14.3% 4.1%);
     --text:hsl(103, 4%, 35%);
     --text-foreground:hsl(110, 4%, 27%);
     --radius: 0.5rem;
+    --top-text:#605e5a;
   }
 
   .dark {

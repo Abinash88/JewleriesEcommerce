@@ -1,6 +1,6 @@
 import React from 'react'
 import Background from "../../Assests/HomeImages/charak_background.png"
-import TopHeaders from '@/Components/PageComponent/DoctorsComponent/TopHeaders'
+import TopHeaders from '@/Components/PageComponent/CatagoryComponent/TopHeaders'
 const MainAbout = dynamic(() => import("@/Components/PageComponent/AboutComponent/MainAbout"))
 import { Metadata } from 'next'
 import dynamic from 'next/dynamic'

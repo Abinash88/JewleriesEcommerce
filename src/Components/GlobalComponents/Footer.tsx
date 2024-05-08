@@ -26,7 +26,7 @@ const Footer = async () => {
                                         <li className='  
                                            w-full' key={index}>
                                             <Link className='font-["Roboto"]  lg:w-auto w-full block py-[15px]
-                                            links h-full hover:text-white text-background lg:py-[7px] text-[14px]  transition-all'
+                                            links h-full hover:text-white  font-light text-background lg:py-[7px] text-[14px]  transition-all'
                                                 href={item?.link}>{item?.name}</Link>
                                         </li>
                                     )
@@ -45,7 +45,7 @@ const Footer = async () => {
                                         return (
                                             <li className='  w-full' key={index}>
                                                 <Link className=' font-["Roboto"]  lg:w-auto w-full
-                                            links h-full hover:text-white text-background  lg:py-[7px]  text-[14px] transition-all'
+                                            links h-full hover:text-white text-background font-light lg:py-[7px]  text-[14px] transition-all'
                                                     href={item?.link}>{item?.name}</Link>
                                             </li>
                                         )
@@ -60,10 +60,10 @@ const Footer = async () => {
                         <div className="">
                             <SmallHead text='Contact' className='font-["Roboto"] text-[16px] mb-2 text-white text-left' />
 
-                            <Link className=' font-["Roboto"]  lg:w-auto w-full
-                                            links h-full hover:text-white text-background  lg:py-[7px]  text-[14px] transition-all'
+                            <Link className=' font-["Roboto"] lg:w-auto w-full
+                                            links h-full hover:text-white text-background  font-light lg:py-[7px]  text-[14px] transition-all'
                                 href={`mainto:jewelrynp@gmail.com`}>jewelrynp@gmail.com</Link>
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center mt-3 gap-3">
                                 <Link href={'https://pintrest.com'}>
                                     <FaPinterest className='text-background text-[20px]' />
                                 </Link>

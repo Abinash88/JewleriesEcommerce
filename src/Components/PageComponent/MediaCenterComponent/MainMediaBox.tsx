@@ -1,5 +1,5 @@
 import React from 'react'
-import TopHeaders from '../DoctorsComponent/TopHeaders'
+import TopHeaders from '../CatagoryComponent/TopHeaders'
 import Background from "../../../Assests/HomeImages/charak_background.png"
 const MainMediaCenter = dynamic(() => import("./MainMediaCenter"))
 const Navigation = dynamic(() => import("./Navigation"))

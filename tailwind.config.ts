@@ -19,6 +19,7 @@ const config: Config = {
         ring: "var(--ring)",
         background: "var(--background)",
         foreground: "var(--foreground)",
+        toptext:"var(--top-text)",
         text: {
           DEFAULT: "var(--text)",
           foreground: "var(--text-foreground)",

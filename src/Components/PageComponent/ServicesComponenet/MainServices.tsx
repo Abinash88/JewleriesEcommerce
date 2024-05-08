@@ -1,5 +1,5 @@
 import React from 'react'
-import TopHeaders from '../DoctorsComponent/TopHeaders'
+import TopHeaders from '../CatagoryComponent/TopHeaders'
 const MainServiceBox = dynamic(() => import("./MainServiceBox"))
 const ServicesSidebar = dynamic(() => import("./ServicesSidebar"))
 const DepartmentSlider = dynamic(() => import("../DepartmentComponent/DepartmentSlider"))

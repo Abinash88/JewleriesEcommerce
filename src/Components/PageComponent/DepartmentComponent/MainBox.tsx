@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 import React from 'react'
 import MainDepartment from './MainDepartment'
-import TopHeaders from '../DoctorsComponent/TopHeaders'
+import TopHeaders from '../CatagoryComponent/TopHeaders'
 const LeftSidebar = dynamic(() => import("./LeftSidebar"))
 const DoctorSlider = dynamic(() => import("./DoctorSlider"))
 // const DepartmentSlider = dynamic(() => import("./DepartmentSlider"))

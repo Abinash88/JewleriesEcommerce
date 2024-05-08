@@ -1,4 +1,4 @@
-import TopHeaders from '@/Components/PageComponent/DoctorsComponent/TopHeaders'
+import TopHeaders from '@/Components/PageComponent/CatagoryComponent/TopHeaders'
 import React from 'react'
 import Background from "../../Assests/HomeImages/charak_background.png";
 import MainPricelist from '@/Components/PageComponent/PriceListComponent/MainPricelist';

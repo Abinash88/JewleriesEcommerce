@@ -74,13 +74,13 @@ export const CatagoryData = [
         image: ShortHariGirl,
         CatagoryName: 'Beads',
         style: 'w-[200px] h-[300px]',
-        link: '/silver'
+        link: '/beads'
     },
     {
         image: ShortHariGirl,
         CatagoryName: 'Silver',
         style: 'w-[150px] h-[200px]',
-        link: '/'
+        link: '/silver'
     },
 ]
 
@@ -111,12 +111,58 @@ export const ProductHighlight = [
 
 export const AboutFooterLink = [
     {
-        name:'About Jewelfy',
-        link:'/about-jewelfy',
+        name: 'About Jewelfy',
+        link: '/about-jewelfy',
     },
     {
-        name:'Faq',
-        link:'/faq',
+        name: 'Faq',
+        link: '/faq',
     },
 
+];
+
+
+export const CatagoryProduct = [
+    {
+        name: 'Perl Heart Earring',
+        image: ShortHariGirl,
+        price: '50',
+        catagory: 'beads',
+    },
+    {
+        name: 'Perl Heart Earring',
+        image: ShortHariGirl,
+        price: '50',
+        catagory: 'perl',
+    },
+    {
+        name: 'Perl Heart Earring',
+        image: ShortHariGirl,
+        price: '50',
+        catagory: 'perl',
+    },
+    {
+        name: 'Perl Heart Earring',
+        image: ShortHariGirl,
+        catagory: 'stone',
+        price: '50'
+    },
+    {
+        name: 'Perl Heart Earring',
+        image: ShortHariGirl,
+        catagory: 'gold',
+        price: '50'
+    },
+    {
+        name: 'Perl Heart Earring',
+        image: ShortHariGirl,
+        catagory: 'stone',
+        price: '50'
+    },
+    {
+        name: 'Perl Heart Earring',
+        image: ShortHariGirl,
+        catagory: 'perl',
+        price: '50'
+    },
 ]

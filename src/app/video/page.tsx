@@ -1,4 +1,4 @@
-import TopHeaders from '@/Components/PageComponent/DoctorsComponent/TopHeaders'
+import TopHeaders from '@/Components/PageComponent/CatagoryComponent/TopHeaders'
 import MainVideo from '@/Components/PageComponent/MainVideoComponent/MainVideo'
 import React from 'react'
 import Background from "@/Assests/HomeImages/charak_background.png"
