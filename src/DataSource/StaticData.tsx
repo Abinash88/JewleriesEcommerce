@@ -1,5 +1,5 @@
 
-import { FaRegHeart } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaPinterest, FaRegHeart } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 import { CiGlobe } from "react-icons/ci";
 import { FaUserCircle } from "react-icons/fa";
@@ -164,5 +164,21 @@ export const CatagoryProduct = [
         image: ShortHariGirl,
         catagory: 'perl',
         price: '50'
+    },
+]
+
+
+export const SocialIcons = [
+    {
+        link: 'https://facebook.com',
+        icon: <FaFacebook />,
+    },
+    {
+        link: 'https://instagram.com',
+        icon: <FaInstagram />,
+    },
+    {
+        link: 'https://pinterest.com',
+        icon: <FaPinterest />,
     },
 ]
