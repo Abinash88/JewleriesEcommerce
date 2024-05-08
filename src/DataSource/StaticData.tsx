@@ -112,7 +112,7 @@ export const ProductHighlight = [
 export const AboutFooterLink = [
     {
         name: 'About Jewelfy',
-        link: '/about-jewelfy',
+        link: '/about-us',
     },
     {
         name: 'Faqs',

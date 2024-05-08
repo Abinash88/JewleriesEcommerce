@@ -32,9 +32,9 @@ const TopHeader = () => {
     return (
         <div className='w-full   border-b-2 border-primary  py-2 md:py-3'>
             <div className="flex w-[90%] mx-auto md:flex-row flex-col gap-2 items-center  justify-end">
-                <div className=" w-full md:w-[40%]">
-                    <Image src={SiteLogo} alt='site-logo' className='w-[70px] mx-auto md:mx-0 h-auto' />
-                </div>
+                <Link href={'/'} className=" w-full md:w-[40%]">
+                    <Image src={SiteLogo} alt='site-logo' className='w-[70px] cursor-pointer mx-auto md:mx-0 h-auto' />
+                </Link>
                 <div className="flex flex-1 w-full  mx-auto  justify-end gap-[15px]">
                     <div className="flex items-center relative h-full w-full md:w-[250px]">
 

@@ -1,5 +1,6 @@
 import { fetchGetRequest } from '@/Components/lib/Helper'
 import Image, { StaticImageData } from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import Skeleton from 'react-loading-skeleton'
 

@@ -2,6 +2,7 @@ import { Button } from "@/Components/Ui/Button";
 import { SiteImageBox } from "@/Components/Ui/ImageBox";
 import { Cn } from "@/Components/lib/Helper";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import React from "react";
 
 
@@ -18,7 +19,9 @@ const Hero = async () => {
                     <SiteImageBox image={'https://img.freepik.com/free-photo/beautiful-model-with-ponytail-makeup_144627-1354.jpg?t=st=1715103298~exp=1715106898~hmac=3eda276127c0ef25112a1b98f2aa275880472275dec6675c1de5f2f7b9ce66a8&w=740'} className="shadow-lg" label="seconed girls" />
                 </div>
                 <div className="absolute left-[50%] bottom-10 translate-x-[-50%]">
-                    <Button variant={'outline'} >Shop Now</Button>
+                    <Link href={'/product?type=rings&catagoryId=stone'}>
+                        <Button variant={'outline'} >Shop Now</Button>
+                    </Link>
                 </div>
             </div>
         </div>

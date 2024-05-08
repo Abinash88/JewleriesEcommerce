@@ -8,7 +8,7 @@ const HeaderNav = () => {
     const [toggleNav, setToggleNav] = useState(false);
 
     return (
-        <nav className='  mx-auto w-full md:border-b-2 border-gray-300 flex justify-end '>
+        <nav className='  mx-auto w-full md:border-b-2 border-[#D9D9D9] flex justify-end '>
             <div onClick={() => { setToggleNav(!toggleNav) }} className="absolute md:hidden flex cursor-pointer top-[70px] left-5">
                 <FaBars className='' />
             </div>
