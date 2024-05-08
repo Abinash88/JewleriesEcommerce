@@ -7,9 +7,9 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { CorrporatePartnerTypes } from '@/DataSource/Types'
+import { ProductHighlight } from '@/DataSource/StaticData'
 
-const MainPartnerSlider = ({ fetchData }: { fetchData: CorrporatePartnerTypes[] }) => {
+const MainPartnerSlider = () => {
     return (
         <div className='w-full'>
             <Swiper
@@ -39,10 +39,10 @@ const MainPartnerSlider = ({ fetchData }: { fetchData: CorrporatePartnerTypes[] 
                 className='flex items-center gap-5  justify-center h-[200px]'
             >
                 {
-                    fetchData?.map((item, index) => {
+                    ProductHighlight?.map((item, index) => {
                         return (
-                            <SwiperSlide key={index} className={` cursor-grab h-[90%] !flex items-center  m-auto p-2 rounded-md `}>
-                                <Image width={600} height={600} src={item?.image?.file} alt={item?.name} className='w-[100px] md:w-[150px]  h-[100px] md:h-[150px] m-auto object-cover' />
+                            <SwiperSlide key={index} className={`  cursor-grab h-[90%] !flex items-center  m-auto p-2 rounded-md `}>
+                                <Image width={600} height={600} src={item?.image} alt={'product'} className='w-[100px] md:w-[150px]  h-[100px] md:h-[150px] m-auto object-cover' />
                             </SwiperSlide>
                         )
                     })

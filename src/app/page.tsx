@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 const Explore = dynamic(() => import("@/Components/PageComponent/HomeComponents/Explore"))
 const Testimonials = dynamic(() => import("@/Components/PageComponent/HomeComponents/Testimonials"), { ssr: true, loading: () => <Skeleton height={500} /> })
-const WhyChoose = dynamic(() => import("@/Components/PageComponent/HomeComponents/WhyChoose"))
+const Catagory = dynamic(() => import("@/Components/PageComponent/HomeComponents/Catagory"))
 import Hero from '@/Components/PageComponent/HomeComponents/Hero'
 import React from 'react'
 const Blogs = dynamic(() => import("@/Components/PageComponent/HomeComponents/Blogs"))
@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Metadata } from 'next'
 import { fetchGetRequest } from '@/Components/lib/Helper'
 import Skeleton from 'react-loading-skeleton'
-const PartnerSlider = dynamic(() => import("@/Components/PageComponent/HomeComponents/PartnerSlider"))
+const ProductSlider = dynamic(() => import("@/Components/PageComponent/HomeComponents/ProductSlider"))
 
 
 
@@ -20,8 +20,8 @@ const page = () => {
   return (
     <div className='overflow-hidden w-full'>
       <Hero />
-      <WhyChoose />
-      <PartnerSlider />
+      <Catagory />
+      <ProductSlider />
       <Explore />
       <Testimonials />
       <Blogs />

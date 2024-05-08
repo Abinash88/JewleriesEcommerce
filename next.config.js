@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        hostname: "cmh.api.aitrc.com.np",
-      },
+    domains: [
+      "cmh.api.aitrc.com.np", "img.freepik.com"
     ],
   },
   webpack: (config) => {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poly:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,14 +7,14 @@
 @layer base {
   :root {
     --background: white;
-    --foreground: #f1eae2;
+    --foreground: #444843;
 
     --card: #dde5d6;
     --card-foreground: #cbd7ce;
-    --popover: hsl(0, 0%, 100%);
-    --popover-foreground: hsl(20 14.3% 4.1%);
+    --popover: hsl(104, 13%, 77%);
+    --popover-foreground: #afb9ab;
 
-    --primary: #819e89;
+    --primary: hsl(137, 13%, 56%);
     --primary-foreground: hsl(60 9.1% 97.8%);
 
     --secondary: hsl(60, 20%, 92%);
@@ -24,7 +24,7 @@
     --muted-foreground: hsl(25 5.3% 44.7%);
 
     --accent: hsl(60 4.8% 95.9%);
-    --accent-foreground: hsl(24 79% 50%);
+    --accent-foreground: hsl(137, 13%, 56%);
 
     --destructive: #332d26;
     --destructive-foreground: hsl(60 9.1% 97.8%);
@@ -71,7 +71,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Poly", serif;
 }
 
 .max_width {
@@ -83,7 +83,7 @@
 }
 
 .inter {
-  font-family: "Inter", sans-serif;
+  font-family: "Poly", serif;
 }
 
 .section_title {
@@ -96,7 +96,7 @@
 
 .links {
   @apply lg:text-[12px] text-[16px] font-normal;
-  font-family: "Inter", sans-serif;
+  font-family: "Poly", serif;
 }
 
 .green_btn {

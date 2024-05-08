@@ -1,16 +1,11 @@
 "use client"
 
 import React, { useEffect, useState } from 'react'
-import { IoIosSearch } from "react-icons/io";
-import { NavBarDataTypes, NumberTypes } from '@/DataSource/Types';
 import { useRouter } from 'next/navigation';
 import { HeaderNavIcon } from '@/DataSource/StaticData';
-const TopHeader = ({ setToggleNav, Navbar, numbers }:
-    {
-        setToggleNav: React.Dispatch<React.SetStateAction<boolean>>;
-        Navbar: NavBarDataTypes[] | undefined;
-        numbers: NumberTypes[]
-    }) => {
+import { FaSearch } from 'react-icons/fa';
+import Link from 'next/link';
+const TopHeader = () => {
     const [checkInputFocus, setCheckInputFocus] = useState(false)
     const [search, setSearch] = useState<string>("");
     const router = useRouter();
@@ -33,17 +28,21 @@ const TopHeader = ({ setToggleNav, Navbar, numbers }:
     }, [search, checkInputFocus])
 
     return (
-        <div className='w-[90%] mx-auto flex  items-center justify-end    py-5'>
-            <div className="flex  justify-end gap-[15px]">
-                <input onFocus={() => setCheckInputFocus(true)} onBlur={() => setCheckInputFocus(false)}
-                    value={search} onChange={(e) => setSearch(e.target.value)} type="search"
-                    className='border pl-10 py-2 focus:outline-none placeholder:text-[14px] 
-                                    pr-4 border-input_border_color text-[14px] h-full w-full' placeholder='Search' />
+        <div className='w-full  flex border-b-2 border-primary items-center justify-end py-3 md:py-5'>
+            <div className="flex w-[90%] mx-auto  justify-end gap-[15px]">
+                <div className="flex items-center relative h-full w-[250px]">
+
+                    <input onFocus={() => setCheckInputFocus(true)} onBlur={() => setCheckInputFocus(false)}
+                        value={search} onChange={(e) => setSearch(e.target.value)} type="search"
+                        className='border pl-10 py-2 focus:outline-none placeholder:text-[14px] 
+                    pr-4 border-input_border_color text-[14px] h-full w-full' placeholder='Search' />
+                    <FaSearch className='absolute text-gray-500 left-[7px] cursor-pointer' />
+                </div>
                 <div className='flex items-center gap-2'>
                     {
                         HeaderNavIcon?.map((item, index) => {
                             return (
-                                <div key={index} className='text-[19px] text-gray-500 cursor-pointer '>{item?.icon}</div>
+                                <Link href={item?.link} key={index} className='text-[19px] hover:text-primary transition-all text-gray-400 cursor-pointer '>{item?.icon}</Link>
                             )
                         })
                     }
