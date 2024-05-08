@@ -11,7 +11,7 @@ import { ProductHighlight } from '@/DataSource/StaticData'
 
 const MainPartnerSlider = () => {
     return (
-        <div className='w-full py-9 bg-foreground'>
+        <div className='w-full py-7 px-5 bg-foreground'>
             <Swiper
                 spaceBetween={50}
                 slidesPerView={2}
@@ -32,11 +32,11 @@ const MainPartnerSlider = () => {
                         spaceBetween: 10,
                     },
                     1500: {
-                        slidesPerView: 7,
+                        slidesPerView: 5,
                         spaceBetween: 20,
                     }
                 }}
-                className='flex items-center gap-5  justify-center h-[332px]'
+                className='flex items-center gap-5  justify-center '
             >
                 {
                     ProductHighlight?.map((item, index) => {

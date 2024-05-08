@@ -34,19 +34,19 @@ export const HeaderNavIcon = [
 export const HeaderNavBar = [
     {
         name: 'Rings',
-        link: '/rings',
+        link: '/product?type=rings&catagoryId=stone',
     },
     {
         name: 'Bracelets',
-        link: 'bracelets',
+        link: '/product?type=bracelets&catagoryId=stone',
     },
     {
         name: 'Earrings',
-        link: 'earrings',
+        link: '/product?type=earrings&catagoryId=stone',
     },
     {
         name: 'Necklaces',
-        link: 'necklaces',
+        link: '/product?type=necklaces&catagoryId=stone',
     },
 
 ]
@@ -115,8 +115,8 @@ export const AboutFooterLink = [
         link: '/about-jewelfy',
     },
     {
-        name: 'Faq',
-        link: '/faq',
+        name: 'Faqs',
+        link: '/faqs',
     },
 
 ];

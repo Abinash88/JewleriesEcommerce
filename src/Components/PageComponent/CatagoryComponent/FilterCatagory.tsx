@@ -6,11 +6,12 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import React from 'react'
 
-const SearchDoctors = () => {
+const FilterCatagory = () => {
     const params = useSearchParams();
     const catagoryId = params.get('catagoryId');
+    const ProductType = params.get('type') || 's';
     return (
-        <div className='w-[220px]'>
+        <div className='w-full md:w-[220px]'>
             <div className="w-full">
                 <div className="flex flex-col gap-4 justify-start">
                     <div className="flex items-center justify-between">
@@ -21,11 +22,11 @@ const SearchDoctors = () => {
                         </div>
                     </div>
                     <div className="flex md:items-center items-start relative md:flex-row flex-col md:gap-[32px] gap-4 justify-between">
-                        <div className="md:w-[70%] flex flex-col  w-full">
+                        <div className="md:w-[70%] flex flex-row flex-wrap md:gap-0 gap-1 md:flex-col  w-full">
                             {
                                 CatagoryData?.map((item, index) => {
                                     return (
-                                        <Link href={`/catagory?catagoryId=${item?.link.split('/').join('')}`} className={Cn(`text-[14px] py-[5px]  px-1 ${catagoryId && item?.link.toLowerCase().includes(catagoryId.toLowerCase()) ? 'bg-gray-100' : ''}`)} key={index}>{item?.CatagoryName} </Link>
+                                        <Link href={`/product?type=${ProductType}&catagoryId=${item?.link.split('/').join('')}`} className={Cn(`text-[14px] py-[5px]  px-3 md:px-1 ${catagoryId && item?.link.toLowerCase().includes(catagoryId.toLowerCase()) ? 'bg-gray-100' : ''}`)} key={index}>{item?.CatagoryName} </Link>
                                     )
                                 })
                             }
@@ -37,4 +38,4 @@ const SearchDoctors = () => {
     )
 }
 
-export default SearchDoctors
+export default FilterCatagory

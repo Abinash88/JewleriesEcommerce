@@ -7,13 +7,11 @@ import TopTags from './TopTags'
 
 const HeaderContent = () => {
 
-    const [ToggleNav, setToggleNav] = useState(false);
-
     return (
         <div className='w-full relative flex flex-col items-center  '>
             <TopTags />
             <TopHeader />
-            <HeaderNav  />
+            <HeaderNav />
         </div>
     )
 }

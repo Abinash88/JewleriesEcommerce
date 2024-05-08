@@ -3,7 +3,7 @@ import { Cn } from '../lib/Helper'
 
 const Texts = ({ text, className }: { text: string; className: string }) => {
     return (
-        <p className={Cn(` text-[15px] ${className}`)}>{text}</p>
+        <p className={Cn(` text-[13px] md:text-[15px] ${className}`)}>{text}</p>
     )
 }
 

@@ -5,7 +5,7 @@ import TopHeaders from '../CatagoryComponent/TopHeaders'
 const LeftSidebar = dynamic(() => import("./LeftSidebar"))
 const DoctorSlider = dynamic(() => import("./DoctorSlider"))
 // const DepartmentSlider = dynamic(() => import("./DepartmentSlider"))
-import Background from "../../../Assests/HomeImages/charak_background.png"
+import Background from "../../../Assests/Home/Hands.png"
 import { MainDepartmentDataTypes } from '@/DataSource/Types'
 import { fetchGetRequest } from '@/Components/lib/Helper'
 const MainBox = async ({ slug }: { slug: string }) => {
