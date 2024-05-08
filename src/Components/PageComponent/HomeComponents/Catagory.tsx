@@ -10,7 +10,7 @@ const Catagory = async () => {
         <div className="w-full">
             <div className="max_width  flex items-center 
             flex-col justify-between w-full pb-[60px] pt-[60px]">
-                <div className="mb-5">
+                <div className="mb-[50px]">
                     <CatagoryTop />
                 </div>
                 <CatagoryBottom />

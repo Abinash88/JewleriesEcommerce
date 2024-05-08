@@ -18,7 +18,7 @@ const CatagoryBottom = () => {
                             <div className={Cn(` overflow-hidden rounded-b-md rounded-t-full ${item?.style}`)}>
                                 <Image src={item?.image} className='w-full h-full object-cover' alt={item?.CatagoryName} />
                             </div>
-                            <h3 className='text-[18px]  text-foreground text-center'>{item?.CatagoryName}</h3>
+                            <h3 className='text-[15px]  text-text text-center'>{item?.CatagoryName}</h3>
                         </Link>)
                     })
                 }

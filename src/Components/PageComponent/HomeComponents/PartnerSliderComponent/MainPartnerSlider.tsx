@@ -11,12 +11,12 @@ import { ProductHighlight } from '@/DataSource/StaticData'
 
 const MainPartnerSlider = () => {
     return (
-        <div className='w-full'>
+        <div className='w-full py-9 bg-foreground'>
             <Swiper
                 spaceBetween={50}
                 slidesPerView={2}
                 modules={[Navigation, Autoplay]}
-                autoplay={true}
+                autoplay={false}
                 loop={true}
                 breakpoints={{
                     480: {
@@ -36,13 +36,13 @@ const MainPartnerSlider = () => {
                         spaceBetween: 20,
                     }
                 }}
-                className='flex items-center gap-5  justify-center h-[200px]'
+                className='flex items-center gap-5  justify-center h-[332px]'
             >
                 {
                     ProductHighlight?.map((item, index) => {
                         return (
-                            <SwiperSlide key={index} className={`  cursor-grab h-[90%] !flex items-center  m-auto p-2 rounded-md `}>
-                                <Image width={600} height={600} src={item?.image} alt={'product'} className='w-[100px] md:w-[150px]  h-[100px] md:h-[150px] m-auto object-cover' />
+                            <SwiperSlide key={index} className={` w-[247.21px] !h-[244.89px]  cursor-grab  !flex items-center  m-auto p-2 rounded-md `}>
+                                <Image width={600} height={600} src={item?.image} alt={'product'} className='w-full  h-full  object-cover' />
                             </SwiperSlide>
                         )
                     })

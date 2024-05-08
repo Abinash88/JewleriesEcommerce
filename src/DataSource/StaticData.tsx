@@ -108,3 +108,15 @@ export const ProductHighlight = [
         image: ShortHariGirl
     },
 ]
+
+export const AboutFooterLink = [
+    {
+        name:'About Jewelfy',
+        link:'/about-jewelfy',
+    },
+    {
+        name:'Faq',
+        link:'/faq',
+    },
+
+]

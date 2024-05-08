@@ -1,10 +1,8 @@
 import dynamic from 'next/dynamic'
-const Explore = dynamic(() => import("@/Components/PageComponent/HomeComponents/Explore"))
-const Testimonials = dynamic(() => import("@/Components/PageComponent/HomeComponents/Testimonials"), { ssr: true, loading: () => <Skeleton height={500} /> })
+const BuyContainer = dynamic(() => import("@/Components/PageComponent/HomeComponents/BuyContainer"))
 const Catagory = dynamic(() => import("@/Components/PageComponent/HomeComponents/Catagory"))
 import Hero from '@/Components/PageComponent/HomeComponents/Hero'
 import React from 'react'
-const Blogs = dynamic(() => import("@/Components/PageComponent/HomeComponents/Blogs"))
 const VideoLibary = dynamic(() => import("@/Components/PageComponent/HomeComponents/VidoeLibary"))
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,10 +20,7 @@ const page = () => {
       <Hero />
       <Catagory />
       <ProductSlider />
-      <Explore />
-      <Testimonials />
-      <Blogs />
-      <VideoLibary />
+      <BuyContainer />
     </div>
   )
 }

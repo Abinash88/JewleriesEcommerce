@@ -9,8 +9,22 @@ const Texts = ({ text, className }: { text: string; className: string }) => {
 
 export default Texts
 
-export const SeconedHead = ({ text, className }: { text: string; className: string }) => {
+export const SmallHead = ({ text, className }: { text: string; className?: string }) => {
     return (
         <h4 className={Cn(` text-[20px] ${className}`)}>{text}</h4>
+    )
+}
+
+
+export const SeconedHead = ({ text, className }: { text: string; className?: string }) => {
+    return (
+        <h3 className={Cn(` text-center w-full  font-normal  leading-9 font-["Roboto"]  text-[24px] ${className}`)}>{text}</h3>
+    )
+}
+
+
+export const MainTextHead = ({ text, className }: { text: string; className?: string }) => {
+    return (
+        <h1 className={Cn(` text-center  w-full text-[48px] font-normal  ${className}`)}>{text}</h1>
     )
 }
