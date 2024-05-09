@@ -77,6 +77,10 @@
   font-family: "Poly", serif;
 }
 
+p{
+  @apply text-text
+}
+
 .max_width {
   @apply max-w-[1440px] mx-auto w-[90%];
 }

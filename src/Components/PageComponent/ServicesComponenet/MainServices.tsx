@@ -2,7 +2,7 @@ import React from 'react'
 import TopHeaders from '../CatagoryComponent/TopHeaders'
 const MainServiceBox = dynamic(() => import("./MainServiceBox"))
 const ServicesSidebar = dynamic(() => import("./ServicesSidebar"))
-const DepartmentSlider = dynamic(() => import("../DepartmentComponent/DepartmentSlider"))
+const DepartmentSlider = dynamic(() => import("../BagsComponent/DepartmentSlider"))
 // import DoctorSlider from '../DepartmentComponent/DoctorSlider'
 import { fetchGetRequest } from '@/Components/lib/Helper'
 import dynamic from 'next/dynamic'
