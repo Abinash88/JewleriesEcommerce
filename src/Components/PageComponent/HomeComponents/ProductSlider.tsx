@@ -1,5 +1,5 @@
 import React from 'react'
-import MainSliderContainer from './PartnerSliderComponent/MainSliderContainer'
+import MainSliderContainer from './ProductSliderContainer/MainSliderContainer'
 import { SeconedHead } from '@/Components/Ui/Texts'
 
 const ProductSlider = async () => {

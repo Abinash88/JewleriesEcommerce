@@ -54,7 +54,7 @@ const BottomMoreProduct = () => {
                                     )
                                 })
                             }
-                      </Swiper>
+                        </Swiper>
 
                     }
                 </div>

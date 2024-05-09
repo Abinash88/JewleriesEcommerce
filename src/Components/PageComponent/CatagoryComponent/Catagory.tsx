@@ -1,22 +1,14 @@
 "use client"
 
-import React, { useState } from 'react'
+import React from 'react'
 import FilterCatagory from './FilterCatagory'
-import Link from 'next/link'
-import { CatagoryData, CatagoryProduct } from '@/DataSource/StaticData'
-import Image from 'next/image'
-import { SmallHead } from '@/Components/Ui/Texts'
-import { FaHeart, FaStreetView } from 'react-icons/fa'
-import { FaRegHeart } from "react-icons/fa";
-import { FaBagShopping } from 'react-icons/fa6'
+import { CatagoryProduct } from '@/DataSource/StaticData'
 import { useSearchParams } from 'next/navigation'
 import SingleProduct from './SingleProduct'
 
 const AllCatagory = () => {
     const params = useSearchParams();
     const catagoryId = params.get('')
-
-    const [toggle, setToggle] = useState(false);
 
     return (
         <div className='w-full'>

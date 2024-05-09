@@ -48,7 +48,7 @@ const TopHeader = () => {
                         {
                             HeaderNavIcon?.map((item, index) => {
                                 return (
-                                    <Link href={item?.link} key={index} className='text-[19px] hover:text-primary
+                                    <Link href={item?.link} key={index} className='text-[19px] 
                                      transition-all text-gray-400 cursor-pointer '>{item?.icon}</Link>
                                 )
                             })

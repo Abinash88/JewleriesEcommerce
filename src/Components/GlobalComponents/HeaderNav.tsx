@@ -19,8 +19,8 @@ const HeaderNav = () => {
                         HeaderNavBar?.map((item, index) => {
                             return (
                                 <li className='lg:mx-1 hover:bg-gray-50 
-                                            lg:hover:bg-transparent lg:border-b-0 border-b md:w-auto w-full' key={index}>
-                                    <Link className='px-[8px]   lg:w-auto w-full block py-[15px]
+                                            lg:hover:bg-transparent    md:w-auto w-full' key={index}>
+                                    <Link className='px-[8px] border-b-2 border-transparent lg:w-auto w-full hover:border-b-2 hover:border-primary block py-[15px]
                                      links h-full hover:text-primary  lg:py-[7px] text-[14px] uppercase lg:text-[16px] transition-all'
                                         href={item?.link}>{item?.name}</Link>
                                 </li>

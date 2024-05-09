@@ -24,7 +24,7 @@ export const HeaderNavIcon = [
     },
     {
         icon: <FaRegHeart />,
-        link: '/Whislist'
+        link: '/favourites'
     },
     {
         icon: <IoBagOutline />,

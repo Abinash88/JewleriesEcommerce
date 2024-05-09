@@ -1,8 +1,8 @@
 import TopHeaders from '@/Components/PageComponent/CatagoryComponent/TopHeaders'
 import React from 'react'
 import Background from "../../Assests/Products/favourites.png";
-import MainFavourites from '@/Components/PageComponent/PriceListComponent/MainFavourites';
 import { Metadata } from 'next';
+import MainFavourites from '@/Components/PageComponent/FavouritesComponenets/MainFavourites';
 
 
 export async function generateMetadata(): Promise<Metadata> {

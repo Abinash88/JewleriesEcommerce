@@ -1,12 +1,9 @@
-import dynamic from 'next/dynamic'
-const BuyContainer = dynamic(() => import("@/Components/PageComponent/HomeComponents/BuyContainer"))
-const Catagory = dynamic(() => import("@/Components/PageComponent/HomeComponents/Catagory"))
-import Hero from '@/Components/PageComponent/HomeComponents/Hero'
+import TopHeaders from '@/Components/PageComponent/CatagoryComponent/TopHeaders'
 import React from 'react'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Background from "@/Assests/Products/others.png"
 import { Metadata } from 'next'
-const ProductSlider = dynamic(() => import("@/Components/PageComponent/HomeComponents/ProductSlider"))
+import MainLogin from '@/Components/PageComponent/LoginComponents/MainLogin'
+
 
 export async function generateMetadata(): Promise<Metadata> {
 
@@ -40,16 +37,10 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-
-
 const page = () => {
-
   return (
-    <div className='overflow-hidden w-full'>
-      <Hero />
-      <Catagory />
-      <ProductSlider />
-      <BuyContainer />
+    <div className='w-full '>
+      <MainLogin />
     </div>
   )
 }

@@ -21,7 +21,7 @@ const Explore = async () => {
                         <MainTextHead className=' leading-[140%] md text-text-foreground' text='Wanna know if you are a sliver or a gold girly?' />
 
                         <div className="relative w-[100px] md:w-[140px]  mx-auto">
-                            <Link href={'/catagory'} className='relative w-full hover:text-white font-roboto text-[13px] md:text-[15px] text-text-foreground
+                            <Link href={'/find-undertone'} className='relative w-full hover:text-white font-roboto text-[13px] md:text-[15px] text-text-foreground
                              bg-primary flex items-center gro justify-center h-[35px] md:h-[45px] z-20 mx-auto'>
                                 CLICK HERE
                             </Link>
