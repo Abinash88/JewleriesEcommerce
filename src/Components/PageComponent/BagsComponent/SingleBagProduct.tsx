@@ -63,13 +63,13 @@ const SingleBagProduct = ({ item }: { item: any }) => {
                     </button>
                 </div>
                 <div className="flex items-center gap-4">
-                    <button className='flex items-center gap-2  text-[12px] '>
-                        <CiHeart className='text-[15px]  text-gray-500' />
-                        <span className='font-["Roboto"]'>Save to wislist</span>
+                    <button className='flex items-center gap-2 group  text-[12px] '>
+                        <CiHeart className=' text-[20px] md:text-[15px] transition-all group-hover:text-green-500 text-gray-500' />
+                        <span className='font-["Roboto"] md:flex hidden transition-all group-hover:text-green-500'>Save to wislist</span>
                     </button>
-                    <button className='flex items-center gap-2  text-[12px] '>
-                        <CiTrash className='text-[15px] text-gray-500' />
-                        <span className='font-["Roboto"]'>Remove</span>
+                    <button className='flex items-center group gap-2  text-[12px] '>
+                        <CiTrash className='text-[20px] md:text-[15px] transition-all group-hover:text-red-500 text-gray-500' />
+                        <span className='font-["Roboto"] md:flex hidden transition-all group-hover:text-red-500'>Remove</span>
                     </button>
                 </div>
             </div>

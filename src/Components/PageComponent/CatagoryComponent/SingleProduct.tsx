@@ -27,7 +27,7 @@ const SingleProduct = ({ item, index }: { item: any, index: number }) => {
                 </div>
                 <Image src={item?.image} alt='' className='size-full object-cover' width={500} height={500} />
             </div>
-            <Link href={'/single-product'} className="px-1 ">
+            <Link href={`/product-detail/${'asfd'}`} className="px-1 ">
                 <SmallHead text={item?.name} className='text-text md:text-[18px]' />
                 <SmallHead text={`Rs. ${item?.price}`} className='text-text md:text-[18px]' />
             </Link>

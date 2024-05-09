@@ -38,7 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
 const page = ({ params }: { params: { id: string } }) => {
     return (
         <div className='w-full'>
-            <div className="max_width fixed_head_style">
+            <div className=" ">
                 <MainDetailContainer params={params} />
             </div>
         </div>

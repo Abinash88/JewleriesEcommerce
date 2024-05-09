@@ -8,8 +8,11 @@ const MainProductDetail = async ({ params }: { params: { id: string } }) => {
     return (
         <div className='w-full'>
             <div className="w-full ">
-                <MainSingleProduct />
-                <div className=" mt-[60px]  w-full">
+                <div className="max_width w-full">
+                    <MainSingleProduct />
+                </div>
+
+                <div className=" my-[60px]  w-full">
                     <BottomMoreProduct />
                 </div>
             </div>

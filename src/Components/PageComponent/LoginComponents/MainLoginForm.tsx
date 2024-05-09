@@ -40,8 +40,8 @@ const MainLoginForm = () => {
                 </div>
 
 
-                <Button type='submit' className='flex gap-2 rounded-xl text-[14px] mx-auto'>
-                    <span className="text-white text-base  font-normal font-['Inter'] leading-tight">Submit</span>
+                <Button type='submit' className='flex gap-2 rounded-full  mx-auto'>
+                    <span className="text-white text-base !text-[14px] font-normal font-['Inter'] leading-tight">Submit</span>
                     <FaArrowRight className='text-5 text-white' />
                 </Button>
 

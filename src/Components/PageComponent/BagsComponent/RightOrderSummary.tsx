@@ -2,11 +2,12 @@ import Texts, { SeconedHead } from '@/Components/Ui/Texts'
 import Image from 'next/image'
 import React from 'react'
 import Rings from "../../../Assests/productRing.png"
+import { Button } from '@/Components/Ui/Button'
 
 const RightOrderSummary = () => {
   return (
-    <div className='wfull'>
-      <div className=" w-[312px] border font-['Roboto'] border-primary ">
+    <div className='w-full h-auto  sticky top-[50px]'>
+      <div className="w-full lg:w-[312px] border font-['Roboto'] border-primary ">
         <div className="h-[10px]  w-full bg-primary"></div>
         <div className="py-5">
           <SeconedHead text='ORDER SUMMARY' className='lg:text-[20px] text-text mb-2' />
@@ -38,10 +39,12 @@ const RightOrderSummary = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
+      <Button variant={'default'} className='w-full mt-2'>
+        Checkout
+      </Button>
     </div>
   )
 }

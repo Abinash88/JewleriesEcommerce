@@ -8,12 +8,14 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { SeconedHead } from '@/Components/Ui/Texts'
 
 const BottomMoreProduct = () => {
     return (
         <div className='w-full flex-1'>
-            <div className="w-full md:flex-row flex-col flex items-start">
-                <div className=" flex-1 flex items-center mt-[40px]">
+            <SeconedHead text='Similar Product' className='mb-4 lg:text0' />
+            <div className="w-full md:flex-row  bg-gray-100 py-8 flex-col flex items-start">
+                <div className=" flex-1 flex items-center ">
                     {
                         <Swiper
                             spaceBetween={50}
@@ -22,10 +24,10 @@ const BottomMoreProduct = () => {
                             autoplay={false}
                             loop={true}
                             breakpoints={{
-                                320: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 10,
-                                },
+                                // 320: {
+                                //     slidesPerView: 1,
+                                //     spaceBetween: 10,
+                                // },
                                 480: {
                                     slidesPerView: 2,
                                     spaceBetween: 10,
@@ -38,10 +40,10 @@ const BottomMoreProduct = () => {
                                     slidesPerView: 4,
                                     spaceBetween: 10,
                                 },
-                                1500: {
-                                    slidesPerView: 5,
-                                    spaceBetween: 20,
-                                }
+                                // 1500: {
+                                //     slidesPerView: 5,
+                                //     spaceBetween: 20,
+                                // }
                             }}
                             className='flex items-center gap-5  justify-center '
                         >

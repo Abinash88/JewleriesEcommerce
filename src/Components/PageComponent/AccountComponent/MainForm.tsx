@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { zodResolver } from "@hookform/resolvers/zod"
 import { SubmitHandler, useForm } from "react-hook-form"
@@ -14,10 +14,9 @@ import { schema } from '@/Components/lib/FormSchema'
 
 const MainForm = () => {
 
- 
+
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm<AccountDataTypes>({ resolver: zodResolver(schema) })
-    const [captchaId, setCaptchaId] = useState('')
     const captcha = useRef<ReCAPTCHA>(null)
 
     const onSubmitForm: SubmitHandler<AccountDataTypes> = async (data) => {
@@ -27,18 +26,11 @@ const MainForm = () => {
         reset()
     }
 
-    const handleChangeCaptcha = (data: string) => {
-        if (data) {
-            setCaptchaId(data);
-        } else {
-            setCaptchaId('')
-        }
-    }
 
     return (
         <div className='w-full'>
             <form onSubmit={handleSubmit(onSubmitForm)} action="" className='w-full flex flex-col  gap-[21px]'>
-                <div className="w-full flex items-center md:flex-row flex-col gap-[23px]">
+                <div className="w-full flex items-center md:flex-row flex-col gap-[20px] md:gap-[50px]">
                     <div className="w-full">
                         <InputBox type="text" {...register("firstname")} name='firstname' className='' label='First Name' htmlfor='First Name' />
                         {
@@ -52,7 +44,7 @@ const MainForm = () => {
                         }
                     </div>
                 </div>
-                <div className="w-full flex items-center md:flex-row flex-col gap-[23px]">
+                <div className="w-full flex items-center md:flex-row flex-col gap-[20px] md:gap-[50px]">
                     <div className="w-full">
                         <InputBox type="email"  {...register("email")} name='email' className='' label='Email' htmlfor='Email' />
                         {
@@ -66,7 +58,7 @@ const MainForm = () => {
                         }
                     </div>
                 </div>
-                <div className="w-full flex items-center md:flex-row flex-col gap-[23px]">
+                <div className="w-full flex items-center md:flex-row flex-col gap-[20px] md:gap-[50px]">
                     <div className="w-full">
                         <InputBox type="password"  {...register("password")} name='password' className='' label='Password' htmlfor='Password' />
                         {
@@ -81,29 +73,10 @@ const MainForm = () => {
                     </div>
                 </div>
 
-                <div className="w-full flex items-center md:flex-row flex-col gap-[13px]">
-
-                    <div className="w-full">
-                        <ReCAPTCHA
-                            sitekey={process.env.NEXT_PUBLIC_SITE_KEY as string}
-                            //@ts-ignore
-                            onChange={handleChangeCaptcha}
-                            ref={captcha}
-                        />
-                    </div>
-                </div>
-
-                {true ?
-                    <Button type='submit' className='flex gap-2 rounded-xl mx-auto text-[14px]'>
-                        <span className="text-white text-base  font-normal font-['Inter'] leading-tight">Submit</span>
-                        <FaArrowRight className='text-5 text-white' />
-                    </Button>
-                    :
-                    <Button type='submit' className='flex gap-2 rounded-xl mx-auto text-[14px]'>
-                        <span className="text-white text-base  font-normal font-['Inter'] leading-tight">Submit</span>
-                        <FaArrowRight className='text-5 text-white' />
-                    </Button>
-                }
+                <Button type='submit' className='flex mt-8 gap-2 rounded-full mx-auto '>
+                    <span className="text-white text-base !text-[14px] font-normal font-['Inter'] leading-tight">Submit</span>
+                    <FaArrowRight className='text-5 text-white' />
+                </Button>
             </form>
         </div>
     )

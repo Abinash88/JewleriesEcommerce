@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic'
 import React from 'react'
 import MainBagsData from './MainBagsData'
 const MainBags = async ({ slug }: { slug: string }) => {

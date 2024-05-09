@@ -4,8 +4,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
+import 'swiper/css';
 import WhatsappIcon from "@/Components/GlobalComponents/WhatsappIcon";
-import Head from "next/head";
 import Script from "next/script";
 const Footer = dynamic(() => import("@/Components/GlobalComponents/Footer"));
 
