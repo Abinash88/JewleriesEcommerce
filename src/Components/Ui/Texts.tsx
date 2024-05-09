@@ -1,7 +1,7 @@
 import React from 'react'
 import { Cn } from '../lib/Helper'
 
-const Texts = ({ text, className }: { text: string; className: string }) => {
+const Texts = ({ text, className }: { text: string; className?: string }) => {
     return (
         <p className={Cn(` text-[13px] md:text-[15px] ${className}`)}>{text}</p>
     )
@@ -25,6 +25,6 @@ export const SeconedHead = ({ text, className }: { text: string; className?: str
 
 export const MainTextHead = ({ text, className }: { text: string; className?: string }) => {
     return (
-        <h1 className={Cn(` text-center  w-full text-[28px] md:text-[35px] lg:text-[48px] font-normal  ${className}`)}>{text}</h1>
+        <h1 className={Cn(` text-center  w-full text-[23px] sm:text-[28px] md:text-[35px] lg:text-[48px] font-normal  ${className}`)}>{text}</h1>
     )
 }

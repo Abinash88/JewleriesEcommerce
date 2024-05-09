@@ -1,9 +1,6 @@
 import React from 'react'
-const MainAbout = dynamic(() => import("@/Components/PageComponent/AboutComponent/MainAbout"))
-import dynamic from 'next/dynamic'
-import { Metadata } from 'next'
-
-
+import { Metadata } from 'next';
+import MainDetailContainer from '@/Components/PageComponent/ProductDetailComponent/MainDetailContainer';
 
 export async function generateMetadata(): Promise<Metadata> {
 
@@ -38,18 +35,14 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 
-const page = () => {
-
+const page = ({ params }: { params: { id: string } }) => {
     return (
-        <div className='w-full fixed_head_style '>
-            <div className="max_width">
-                <MainAbout />
+        <div className='w-full'>
+            <div className="max_width fixed_head_style">
+                <MainDetailContainer params={params} />
             </div>
         </div>
     )
-
 }
-
-
 
 export default page

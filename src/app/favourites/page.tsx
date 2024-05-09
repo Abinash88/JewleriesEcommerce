@@ -1,8 +1,8 @@
+import TopHeaders from '@/Components/PageComponent/CatagoryComponent/TopHeaders'
 import React from 'react'
-const MainAbout = dynamic(() => import("@/Components/PageComponent/AboutComponent/MainAbout"))
-import dynamic from 'next/dynamic'
-import { Metadata } from 'next'
-
+import Background from "../../Assests/Products/favourites.png";
+import MainFavourites from '@/Components/PageComponent/PriceListComponent/MainFavourites';
+import { Metadata } from 'next';
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -38,18 +38,17 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 
-const page = () => {
+const page = async () => {
+
 
     return (
-        <div className='w-full fixed_head_style '>
-            <div className="max_width">
-                <MainAbout />
+        <div className='wfull fixed_head_style'>
+            <TopHeaders style='h-[220px]' BackgroundImage={Background} />
+            <div className="max_width mb-16">
+                <MainFavourites />
             </div>
         </div>
     )
-
 }
-
-
 
 export default page

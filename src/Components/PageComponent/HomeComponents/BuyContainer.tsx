@@ -20,9 +20,9 @@ const Explore = async () => {
                     <div className="lg:w-[50%] gap-5 w-full flex flex-col items-center lg:mb-0 mb-7 justify-center px-4 relative flex-1">
                         <MainTextHead className=' leading-[140%] md text-text-foreground' text='Wanna know if you are a sliver or a gold girly?' />
 
-                        <div className="relative w-[140px]  mx-auto">
-                            <Link href={'/catagory'} className='relative w-[140px] hover:text-white font-roboto text-[15px] text-text-foreground
-                             bg-primary flex items-center gro justify-center h-[45px] z-20 mx-auto'>
+                        <div className="relative w-[100px] md:w-[140px]  mx-auto">
+                            <Link href={'/catagory'} className='relative w-full hover:text-white font-roboto text-[13px] md:text-[15px] text-text-foreground
+                             bg-primary flex items-center gro justify-center h-[35px] md:h-[45px] z-20 mx-auto'>
                                 CLICK HERE
                             </Link>
                             <span className='absolute w-full h-full bottom-[-7px] right-[-7px] bg-background z-0'></span>

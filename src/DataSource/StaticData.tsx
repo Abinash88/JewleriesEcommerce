@@ -4,11 +4,22 @@ import { IoBagOutline } from "react-icons/io5";
 import { CiGlobe } from "react-icons/ci";
 import { FaUserCircle } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
-import ShortHariGirl from "../Assests/Home/shortHairGirl.jpg"
+import { TbArrowsDoubleSwNe } from "react-icons/tb";
+import ShortHariGirl from "../Assests/productRing.png"
+import stone from "../Assests/Home/stone.png"
+import beads from "../Assests/Home/beads.png"
+import gold from "../Assests/Home/gold.png"
+import silver from "../Assests/Home/silver.png"
+import pearl from "../Assests/Home/pearl.png"
+
+import jewl1 from '../Assests/Home/jewl1.png'
+import jewl2 from '../Assests/Home/jewl2.png'
+import jewl3 from '../Assests/Home/jewl3.png'
+import jewl4 from '../Assests/Home/jewl4.png'
 
 export const HeaderNavIcon = [
     {
-        icon: <FaSearch />,
+        icon: <TbArrowsDoubleSwNe />,
         link: '/'
     },
     {
@@ -29,7 +40,6 @@ export const HeaderNavIcon = [
     },
 
 ]
-
 
 export const HeaderNavBar = [
     {
@@ -53,59 +63,55 @@ export const HeaderNavBar = [
 
 export const CatagoryData = [
     {
-        image: ShortHariGirl,
+        image: stone,
         CatagoryName: 'Stone',
         style: 'w-[150px] h-[200px]',
         link: '/stone'
     },
     {
-        image: ShortHariGirl,
-        CatagoryName: 'Perl',
+        image: pearl,
+        CatagoryName: 'pearl',
         style: 'w-[200px] h-[300px]',
-        link: '/perl'
+        link: '/pearl'
     },
     {
-        image: ShortHariGirl,
+        image: gold,
         CatagoryName: 'Gold',
         style: 'w-[250px] h-[350px]',
         link: '/gold'
     },
     {
-        image: ShortHariGirl,
+        image: beads,
         CatagoryName: 'Beads',
         style: 'w-[200px] h-[300px]',
         link: '/beads'
     },
     {
-        image: ShortHariGirl,
+        image: silver,
         CatagoryName: 'Silver',
         style: 'w-[150px] h-[200px]',
         link: '/silver'
     },
 ]
 
-
 export const ProductHighlight = [
     {
-        image: ShortHariGirl
+        image: jewl1
     },
     {
-        image: ShortHariGirl
+        image: jewl2
     },
     {
-        image: ShortHariGirl
+        image: jewl3
     },
     {
-        image: ShortHariGirl
+        image: jewl4
     },
     {
-        image: ShortHariGirl
+        image: jewl2
     },
     {
-        image: ShortHariGirl
-    },
-    {
-        image: ShortHariGirl
+        image: jewl1
     },
 ]
 
@@ -120,7 +126,6 @@ export const AboutFooterLink = [
     },
 
 ];
-
 
 export const CatagoryProduct = [
     {
@@ -167,7 +172,6 @@ export const CatagoryProduct = [
     },
 ]
 
-
 export const SocialIcons = [
     {
         link: 'https://facebook.com',
@@ -180,5 +184,24 @@ export const SocialIcons = [
     {
         link: 'https://pinterest.com',
         icon: <FaPinterest />,
+    },
+]
+
+export const descriptionData = [
+    {
+        name: 'collection',
+        value: 'Jewelfy Timeless'
+    },
+    {
+        name: 'Stone',
+        value: 'Treated freshwater cultured pearl'
+    },
+    {
+        name: 'color',
+        value: 'White'
+    },
+    {
+        name: 'Product Type     ',
+        value: 'Earrings'
     },
 ]

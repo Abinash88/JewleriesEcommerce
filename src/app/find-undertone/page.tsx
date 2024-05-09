@@ -1,8 +1,8 @@
 import React from 'react'
-const MainAbout = dynamic(() => import("@/Components/PageComponent/AboutComponent/MainAbout"))
-import dynamic from 'next/dynamic'
 import { Metadata } from 'next'
-
+import { fetchGetRequest } from '@/Components/lib/Helper'
+import dynamic from 'next/dynamic'
+const MainUndertone = dynamic(() => import('@/Components/PageComponent/MainUndertoneComponent/MainUndertone'))
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -39,17 +39,11 @@ export async function generateMetadata(): Promise<Metadata> {
 
 
 const page = () => {
-
     return (
-        <div className='w-full fixed_head_style '>
-            <div className="max_width">
-                <MainAbout />
-            </div>
+        <div className='w-full fixed_head_style'>
+                <MainUndertone />
         </div>
     )
-
 }
-
-
 
 export default page

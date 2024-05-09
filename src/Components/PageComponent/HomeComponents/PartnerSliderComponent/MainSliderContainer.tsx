@@ -9,16 +9,20 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { ProductHighlight } from '@/DataSource/StaticData'
 
-const MainPartnerSlider = () => {
+const MainSliderContainer = () => {
     return (
         <div className='w-full py-7 px-5 bg-foreground'>
             <Swiper
                 spaceBetween={50}
-                slidesPerView={2}
+                slidesPerView={1}
                 modules={[Navigation, Autoplay]}
                 autoplay={false}
                 loop={true}
                 breakpoints={{
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
                     480: {
                         slidesPerView: 2,
                         spaceBetween: 10,
@@ -27,8 +31,8 @@ const MainPartnerSlider = () => {
                         slidesPerView: 3,
                         spaceBetween: 10,
                     },
-                    900: {
-                        slidesPerView: 5,
+                    1000: {
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     1500: {
@@ -52,4 +56,4 @@ const MainPartnerSlider = () => {
     )
 }
 
-export default MainPartnerSlider
+export default MainSliderContainer

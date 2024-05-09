@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Skeleton from 'react-loading-skeleton'
-import Bacakground from "../../../Assests/HomeImages/nurse_with_kid.png"
+import Bacakground from "../../../Assests/Home/6967926.jpg"
 
 const PriceListSidebar = () => {
     return (

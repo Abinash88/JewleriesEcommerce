@@ -1,5 +1,5 @@
 import React from 'react'
-import MainPartnerSlider from './PartnerSliderComponent/MainPartnerSlider'
+import MainSliderContainer from './PartnerSliderComponent/MainSliderContainer'
 import { SeconedHead } from '@/Components/Ui/Texts'
 
 const ProductSlider = async () => {
@@ -10,7 +10,7 @@ const ProductSlider = async () => {
                 <div className="max_width mb-4">
                     <SeconedHead text='Product Highlight' className='text-left' />
                 </div>
-                <MainPartnerSlider />
+                <MainSliderContainer />
             </div>
         </div>
     )

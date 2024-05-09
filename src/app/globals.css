@@ -88,3 +88,7 @@
 #AccordianTitle section div {
   @apply text-[14px] font-normal font-["Roboto"];
 }
+
+.undertone #AccordianTitle h2 button span svg {
+  @apply text-[25px] rounded-full text-text-foreground  p-[3px] bg-gray-400;
+}
