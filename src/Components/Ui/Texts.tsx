@@ -18,7 +18,7 @@ export const SmallHead = ({ text, className }: { text: string; className?: strin
 
 export const SeconedHead = ({ text, className }: { text: string; className?: string }) => {
     return (
-        <h3 className={Cn(` text-center w-full  font-normal  leading-9 font-["Roboto"] text-[18px] md:text-[22px] lg:text-[24px] ${className}`)}>{text}</h3>
+        <h3 className={Cn(` text-center w-full  font-normal  leading-9 font-["Roboto"] text-[20px] md:text-[22px] lg:text-[24px] ${className}`)}>{text}</h3>
     )
 }
 

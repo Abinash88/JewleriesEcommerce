@@ -30,7 +30,7 @@ const Main = () => {
                             </div>
                             :
                             <div className="flex justify-center my-10">
-                                <NoProducts />
+                                <NoProducts title='YOUR SHOPPING BAG IS EMPTY' />
                             </div>
                     }
                 </div>

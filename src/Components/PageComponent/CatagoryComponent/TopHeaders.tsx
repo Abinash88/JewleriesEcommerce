@@ -6,7 +6,7 @@ import React from 'react'
 const TopHeaders = ({ BackgroundImage, style }: { BackgroundImage: StaticImageData, style?: string }) => {
 
     return (
-        <div className={Cn(` w-[90%]  mx-auto relative   ${style}`)}>
+        <div className={Cn(`  mx-auto relative   ${style}`)}>
             <Image src={BackgroundImage} alt='background image' className='w-full object-cover  h-full' />
         </div>
     )

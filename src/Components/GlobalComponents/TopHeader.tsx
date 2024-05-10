@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation';
 import { HeaderNavIcon } from '@/DataSource/StaticData';
-import { FaSearch } from 'react-icons/fa';
+import { FaChevronDown, FaSearch } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
 import SiteLogo from '../../Assests/Home/logo.png'
@@ -13,21 +13,6 @@ const TopHeader = () => {
     const router = useRouter();
 
 
-    // useEffect(() => {
-    //     if (typeof window === "undefined") return;
-    //     const ClickEnterKey = (ev: KeyboardEvent) => {
-    //         if (ev.key === "Enter") {
-    //             if (search?.length >= 2 && checkInputFocus) {
-    //                 router.push(`/search/${search}`)
-    //             }
-    //         }
-    //     }
-
-    //     document.addEventListener("keyup", ClickEnterKey)
-    //     return () => document.removeEventListener("keyup", ClickEnterKey);
-
-    //     //eslint-disable-next-line
-    // }, [search, checkInputFocus])
 
     return (
         <div className='w-full   border-b-2 border-primary  py-2 md:py-3'>
@@ -47,6 +32,12 @@ const TopHeader = () => {
                     <div className='flex items-center gap-2'>
                         {
                             HeaderNavIcon?.map((item, index) => {
+                                if (item?.link.toLowerCase() === 'language') return (
+                                    <button type='button'>
+                                        <span>  {item?.icon}</span>
+                                        <FaChevronDown className='text-[20px] ' />
+                                    </button>
+                                )
                                 return (
                                     <Link href={item?.link} key={index} className='text-[19px] 
                                      transition-all text-gray-400 cursor-pointer '>{item?.icon}</Link>

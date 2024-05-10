@@ -36,9 +36,9 @@ const MainCatagory = () => {
     }
 
     return (
-        <div className='w-full'>
+        <div className='w-full max_width'>
             <TopHeaders  BackgroundImage={SelectProductyType()} />
-            <div className="flex max_width  lg:flex-row flex-col py-[40px] items-start justify-center">
+            <div className="flex   lg:flex-row flex-col py-[40px] items-start justify-center">
                 <Catagory />
             </div>
         </div>

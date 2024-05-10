@@ -3,8 +3,10 @@ import Image from 'next/image'
 import React from 'react'
 import Rings from "../../../Assests/productRing.png"
 import { Button } from '@/Components/Ui/Button'
+import { Cn } from '@/Components/lib/Helper'
+import Link from 'next/link'
 
-const RightOrderSummary = () => {
+const RightOrderSummary = ({ hideCheckout }: { hideCheckout?: boolean }) => {
   return (
     <div className='w-full h-auto  sticky top-[50px]'>
       <div className="w-full lg:w-[312px] border font-['Roboto'] border-primary ">
@@ -42,9 +44,11 @@ const RightOrderSummary = () => {
           </div>
         </div>
       </div>
-      <Button variant={'default'} className='w-full mt-2'>
-        Checkout
-      </Button>
+      <Link href={'/my-order'}>
+        <Button variant={'default'} className={Cn(`w-full mt-2 ${hideCheckout ? 'hidden' : ''}`)}>
+          Checkout
+        </Button>
+      </Link>
     </div>
   )
 }

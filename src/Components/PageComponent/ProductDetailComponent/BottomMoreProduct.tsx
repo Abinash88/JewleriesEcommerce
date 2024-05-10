@@ -15,7 +15,7 @@ const BottomMoreProduct = () => {
         <div className='w-full flex-1'>
             <SeconedHead text='Similar Product' className='mb-4 lg:text0' />
             <div className="w-full md:flex-row  bg-gray-100 py-8 flex-col flex items-start">
-                <div className=" flex-1 flex items-center ">
+                <div className=" flex-1 flex gap-5 justify-center items-center ">
                     {
                         <Swiper
                             spaceBetween={50}
@@ -24,10 +24,10 @@ const BottomMoreProduct = () => {
                             autoplay={false}
                             loop={true}
                             breakpoints={{
-                                // 320: {
-                                //     slidesPerView: 1,
-                                //     spaceBetween: 10,
-                                // },
+                                320: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                },
                                 480: {
                                     slidesPerView: 2,
                                     spaceBetween: 10,
@@ -40,17 +40,17 @@ const BottomMoreProduct = () => {
                                     slidesPerView: 4,
                                     spaceBetween: 10,
                                 },
-                                // 1500: {
-                                //     slidesPerView: 5,
-                                //     spaceBetween: 20,
-                                // }
+                                1500: {
+                                    slidesPerView: 5,
+                                    spaceBetween: 20,
+                                }
                             }}
-                            className='flex items-center gap-5  justify-center '
+                            className=' w-[1000px] '
                         >
                             {
-                                CatagoryProduct?.map((item, index) => {
+                                CatagoryProduct?.slice(0, 5).map((item, index) => {
                                     return (
-                                        <SwiperSlide key={index} className={` w-[247.21px] !h-[244.89px]  cursor-grab  !flex items-center  m-auto p-2 rounded-md `}>
+                                        <SwiperSlide key={index} className={` w-full  cursor-grab p-2  `}>
                                             <SingleProduct item={item} index={index} key={index} />
                                         </SwiperSlide>
                                     )

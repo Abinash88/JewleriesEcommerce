@@ -16,6 +16,7 @@ import jewl1 from '../Assests/Home/jewl1.png'
 import jewl2 from '../Assests/Home/jewl2.png'
 import jewl3 from '../Assests/Home/jewl3.png'
 import jewl4 from '../Assests/Home/jewl4.png'
+import { CatagoryProductTypes } from "./Types";
 
 export const HeaderNavIcon = [
     {
@@ -66,31 +67,31 @@ export const CatagoryData = [
         image: stone,
         CatagoryName: 'Stone',
         style: 'w-[150px] h-[200px]',
-        link: '/stone'
+        link: '/product?type=rings&catagoryId=stone'
     },
     {
         image: pearl,
         CatagoryName: 'pearl',
         style: 'w-[200px] h-[300px]',
-        link: '/pearl'
+        link: '/product?type=rings&catagoryId=pearl'
     },
     {
         image: gold,
         CatagoryName: 'Gold',
         style: 'w-[250px] h-[350px]',
-        link: '/gold'
+        link: '/product?type=rings&catagoryId=gold'
     },
     {
         image: beads,
         CatagoryName: 'Beads',
         style: 'w-[200px] h-[300px]',
-        link: '/beads'
+        link: '/product?type=rings&catagoryId=beads'
     },
     {
         image: silver,
         CatagoryName: 'Silver',
         style: 'w-[150px] h-[200px]',
-        link: '/silver'
+        link: '/product?type=rings&catagoryId=silver'
     },
 ]
 
@@ -127,7 +128,7 @@ export const AboutFooterLink = [
 
 ];
 
-export const CatagoryProduct = [
+export const CatagoryProduct: CatagoryProductTypes[] = [
     {
         name: 'Perl Heart Earring',
         image: ShortHariGirl,

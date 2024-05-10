@@ -1,7 +1,8 @@
-import React from 'react'
-const MainFaqs = dynamic(() => import("@/Components/PageComponent/FaqComponent/MainFaqs"))
-import dynamic from 'next/dynamic'
+import MainMyOrder from '@/Components/PageComponent/OrderComponent/MainOrderBox'
+import { fetchGetRequest } from '@/Components/lib/Helper'
 import { Metadata } from 'next'
+import React from 'react'
+
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -38,12 +39,10 @@ export async function generateMetadata(): Promise<Metadata> {
 
 
 const page = async () => {
-
-
     return (
-        <div className='w-full'>
+        <div className='w-full fixed_head_style'>
             <div className="max_width">
-                <MainFaqs />
+                <MainMyOrder />
             </div>
         </div>
     )
