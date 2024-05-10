@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect } from 'react'
+import React  from 'react'
 import Texts, { SeconedHead } from '@/Components/Ui/Texts'
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
 import useHandleAccordian from '@/Components/hooks/useHandleAccordian'
