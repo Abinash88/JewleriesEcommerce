@@ -15,7 +15,7 @@ const BottomMoreProduct = () => {
         <div className='w-full flex-1'>
             <SeconedHead text='Similar Product' className='mb-4 lg:text0' />
             <div className="w-full md:flex-row  bg-gray-100 py-8 flex-col flex items-start">
-                <div className=" flex-1 flex gap-5 justify-center items-center ">
+                <div className=" flex-1 w-full flex gap-5 justify-center items-center ">
                     {
                         <Swiper
                             spaceBetween={50}
@@ -36,19 +36,19 @@ const BottomMoreProduct = () => {
                                     slidesPerView: 3,
                                     spaceBetween: 10,
                                 },
-                                1000: {
+                                900: {
                                     slidesPerView: 4,
                                     spaceBetween: 10,
                                 },
-                                1500: {
+                                1200: {
                                     slidesPerView: 5,
                                     spaceBetween: 20,
                                 }
                             }}
-                            className=' w-[1000px] '
+                            className='flex items-center gap-5 justify-center '
                         >
                             {
-                                CatagoryProduct?.slice(0, 5).map((item, index) => {
+                                CatagoryProduct?.map((item, index) => {
                                     return (
                                         <SwiperSlide key={index} className={` w-full  cursor-grab p-2  `}>
                                             <SingleProduct item={item} index={index} key={index} />

@@ -26,7 +26,7 @@ const FilterCatagory = () => {
                             {
                                 CatagoryData?.map((item, index) => {
                                     return (
-                                        <Link href={`/product?type=${ProductType}&catagoryId=${item?.link.split('/').join('')}`} className={Cn(`text-[14px] py-[5px]  px-3 md:px-1 ${catagoryId && item?.link.toLowerCase().includes(catagoryId.toLowerCase()) ? 'bg-gray-100' : ''}`)} key={index}>{item?.CatagoryName} </Link>
+                                        <Link href={item?.link} className={Cn(`text-[14px] py-[5px]  px-3 md:px-1 ${catagoryId && item?.link.toLowerCase().includes(catagoryId.toLowerCase()) ? 'bg-gray-100' : ''}`)} key={index}>{item?.CatagoryName} </Link>
                                     )
                                 })
                             }

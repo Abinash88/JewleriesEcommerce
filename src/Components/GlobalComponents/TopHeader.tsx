@@ -26,17 +26,21 @@ const TopHeader = () => {
                         <input onFocus={() => setCheckInputFocus(true)} onBlur={() => setCheckInputFocus(false)}
                             value={search} onChange={(e) => setSearch(e.target.value)} type="search"
                             className='border pl-10 py-2 focus:outline-none placeholder:text-[14px] 
-                    pr-4 border-input_border_color text-[14px] h-full w-full' placeholder='Search' />
+                            pr-4 border-input_border_color text-[14px] h-full w-full' placeholder='Search' />
                         <FaSearch className='absolute text-gray-500 left-[7px] cursor-pointer' />
                     </div>
                     <div className='flex items-center gap-2'>
                         {
                             HeaderNavIcon?.map((item, index) => {
-                                if (item?.link.toLowerCase() === 'language') return (
-                                    <button type='button'>
-                                        <span>  {item?.icon}</span>
-                                        <FaChevronDown className='text-[20px] ' />
-                                    </button>
+                                if (item?.link.toLowerCase() === '/language') return (
+                                    <div key={index} className='flex group items-center gap-[1px]'>
+                                        <span className='text-[19px] transition-all text-gray-400 cursor-pointer '>{item?.icon}</span>
+                                        <FaChevronDown className='text-[10px] text-gray-400  ' />
+                                        <div style={{ boxShadow: '1px 1px  10px #EEEEEE' }} className="absolute w-[100px] group-hover:flex  bg-white  hidden flex-col gap-2 items-start  py-3 bottom-[2px] right-10">
+                                            <button className='text-[12px] hover:bg-gray-100 font-["Roboto"] text-text pl-2 w-full text-left py-[3px]'>English</button>
+                                            <button className='text-[12px] hover:bg-gray-100 font-["Roboto"] text-text pl-2 w-full text-left py-[3px]'>German</button>
+                                        </div>
+                                    </div>
                                 )
                                 return (
                                     <Link href={item?.link} key={index} className='text-[19px] 
