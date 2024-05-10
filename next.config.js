@@ -5,11 +5,11 @@ const nextConfig = {
       "cmh.api.aitrc.com.np", "img.freepik.com"
     ],
   },
-  webpack: (config) => {
-    config.resolve.alias.canvas = false;
+  // webpack: (config) => {
+  //   config.resolve.alias.canvas = false;
 
-    return config;
-  },
+  //   return config;
+  // },
   devIndicators: {
     buildActivity: false,
   },
