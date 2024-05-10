@@ -33,7 +33,7 @@ export const HeaderNavIcon = [
     },
     {
         icon: <FaUserCircle />,
-        link: '/profile'
+        link: '/account'
     },
     {
         icon: <CiGlobe />,
