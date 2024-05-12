@@ -3,7 +3,6 @@ import { FaFacebook, FaInstagram, FaPinterest, FaRegHeart } from "react-icons/fa
 import { IoBagOutline } from "react-icons/io5";
 import { CiGlobe } from "react-icons/ci";
 import { FaUserCircle } from "react-icons/fa";
-import { FaSearch } from "react-icons/fa";
 import { TbArrowsDoubleSwNe } from "react-icons/tb";
 import ShortHariGirl from "../Assests/productRing.png"
 import stone from "../Assests/Home/stone.png"
